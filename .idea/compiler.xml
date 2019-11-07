@@ -9,12 +9,15 @@
         <module name="backend" />
         <module name="frontend" />
         <module name="tracker-logServer" />
+        <module name="weblog-prepareser" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="backend" target="1.5" />
       <module name="frontend" target="1.5" />
       <module name="tracker-logServer" target="1.5" />
+      <module name="weblog-prepareser" target="1.5" />
+      <module name="weblog-preparser" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
