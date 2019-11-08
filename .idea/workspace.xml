@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/resources/core-site.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/resources/hive-site.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/preparser/PreparseETL.scala" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <ignored path="$PROJECT_DIR$/tracker-logServer/target/" />
@@ -127,11 +121,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/spark-preparse-etl/src/main/resources/core-site.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -198,9 +202,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1417" />
-    <option name="y" value="47" />
-    <option name="width" value="1106" />
+    <option name="x" value="79" />
+    <option name="y" value="81" />
+    <option name="width" value="1272" />
     <option name="height" value="1355" />
   </component>
   <component name="ProjectView">
@@ -224,6 +228,11 @@
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -503,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573130455267</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成网站原始日志预解析逻辑">
+      <created>1573183831961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573183831962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -512,7 +528,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1417" y="47" width="1106" height="1355" extended-state="0" />
+    <frame x="79" y="81" width="1272" height="1355" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -526,7 +543,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16539197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22854786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,7 +593,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试删除无用文件" />
     <MESSAGE value="与解析webLog通过Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="与解析webLog通过Test" />
+    <MESSAGE value="完成网站原始日志预解析逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成网站原始日志预解析逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -717,6 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6893">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,6 +743,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -800,13 +820,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6893">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -932,7 +945,15 @@
     <entry file="file://$PROJECT_DIR$/backend/spark-preparse-etl/src/main/resources/core-site.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="10" />
           <folding />
         </state>
       </provider>
