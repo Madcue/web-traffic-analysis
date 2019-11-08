@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="backend" />
         <module name="frontend" />
+        <module name="spark-preparse-etl" />
         <module name="tracker-logServer" />
-        <module name="weblog-prepareser" />
+        <module name="weblog-preparser" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="backend" target="1.5" />
-      <module name="frontend" target="1.5" />
-      <module name="tracker-logServer" target="1.5" />
-      <module name="weblog-prepareser" target="1.5" />
-      <module name="weblog-preparser" target="1.5" />
+      <module name="backend" target="1.8" />
+      <module name="frontend" target="1.8" />
+      <module name="spark-preparse-etl" target="1.8" />
+      <module name="tracker-logServer" target="1.8" />
+      <module name="weblog-preparser" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
