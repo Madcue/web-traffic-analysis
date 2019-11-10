@@ -11,6 +11,9 @@
     <modules>
         <module>weblog-preparser</module>
         <module>spark-preparse-etl</module>
+        <module>weblog-parser</module>
+        <module>IPLocatioin-parser</module>
+        <module>metadata</module>
     </modules>
 
 
