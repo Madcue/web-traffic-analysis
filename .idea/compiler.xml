@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="frontend" />
         <module name="IPLocatioin-parser" />
+        <module name="IPLocation-parser" />
         <module name="metadata" />
         <module name="spark-preparse-etl" />
         <module name="tracker-logServer" />
@@ -19,6 +20,7 @@
       <module name="backend" target="1.8" />
       <module name="frontend" target="1.8" />
       <module name="IPLocatioin-parser" target="1.8" />
+      <module name="IPLocation-parser" target="1.8" />
       <module name="metadata" target="1.8" />
       <module name="spark-preparse-etl" target="1.8" />
       <module name="tracker-logServer" target="1.8" />

@@ -1,10 +1,18 @@
 package com.twq.parser.objectbuilder;
 
+import com.twq.iplocation.IpLocationParser;
+import com.twq.parser.dataobject.BaseDataObject;
+import com.twq.parser.utils.ColumnReader;
+import com.twq.prepaser.PreParsedLog;
+import eu.bitwalker.useragentutils.UserAgent;
+
 import java.util.List;
 
-public class AbstractDataObjectBuilder {
+public abstract class AbstractDataObjectBuilder {
+
     public abstract String getCommand();
-   // public abstract List
+
+    public abstract List<BaseDataObject> doBuildDataObjects(PreParsedLog preParsedLog);
 
     public void fillCommonBaseDataObjectValue(BaseDataObject baseDataObject,
                                               PreParsedLog preParsedLog, ColumnReader columnReader) {
@@ -22,4 +30,7 @@ public class AbstractDataObjectBuilder {
         //解析UserAgent信息
         baseDataObject.setUserAgent(preParsedLog.getUserAgent().toString());
         baseDataObject.setUserAgentInfo(UserAgent.parseUserAgentString(preParsedLog.getUserAgent().toString()));
+
+    }
+
 }

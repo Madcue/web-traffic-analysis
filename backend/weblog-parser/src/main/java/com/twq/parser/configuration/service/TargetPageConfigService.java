@@ -24,7 +24,7 @@ public class TargetPageConfigService{
      * @param profileId
      * @return
      */
-    public List<TargetConfigMatcher> getByProfileIdd(int profileId){
+    public List<TargetConfigMatcher> getByProfileId(int profileId){
         List<TargetPage> targetPags =targetPageMap.getOrDefault(profileId, Collections.<TargetPage>emptyList());
         List<TargetConfigMatcher> targetConfigMatchers = targetPags.stream().map(
                 targetPage -> {
