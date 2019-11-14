@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="backend功能接近全部实现">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/test/java/java/com/twq/iplocation/IpLocationParserTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/InvalidLogObject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/ParsedDataObject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/TargetPageDataObject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" />
+    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Conversion.avsc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Heartbeat.avsc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/MouseClick.avsc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/PageView.avsc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Session.avsc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/pom.xml" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpLocation.java" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocation.java" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpRange.java" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpRange.java" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/resources/GeoLiteCity-Blocks.csv" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/resources/GeoLiteCity-Blocks.csv" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/resources/GeoLiteCity-Location.csv" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/resources/GeoLiteCity-Location.csv" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/resources/region_codes.csv" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/resources/region_codes.csv" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/LogParser.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <ignored path="$PROJECT_DIR$/tracker-logServer/target/" />
@@ -41,6 +40,7 @@
     <ignored path="$PROJECT_DIR$/backend/IPLocatioin-parser/target/" />
     <ignored path="$PROJECT_DIR$/backend/metadata/target/" />
     <ignored path="$PROJECT_DIR$/backend/IPLocation-parser/target/" />
+    <ignored path="$PROJECT_DIR$/backend/spark-sessionization-etl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,21 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractDataObjectBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java">
+      <file leaf-file-name="HeartbeatDataObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventDataObjectBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -73,28 +63,8 @@
       <file leaf-file-name="HeartbeatDataObjectBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MouseClickDataObjectBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PvDataObjectBuilder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2160">
-              <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+            <state relative-caret-position="918">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +73,48 @@
       <file leaf-file-name="PvDataObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="567">
+              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.avsc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Session.avsc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataRecords.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -140,12 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/prepaser/PreparseETL.scala" />
-        <option value="$PROJECT_DIR$/backend/IPLocatioin-parser/pom.xml" />
-        <option value="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpLocation.java" />
-        <option value="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpRange.java" />
-        <option value="$PROJECT_DIR$/backend/IPLocatioin-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" />
-        <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/MatchType.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/SearchEngineConfig.java" />
@@ -170,7 +174,6 @@
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/DefaultProfileConfigLoader.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/TargetConfigMatcher.java" />
         <option value="$PROJECT_DIR$/backend/IPLocatioin-parser/src/test/java/java/com/twq/iplocation/IpLocationParserTest.java" />
-        <option value="$PROJECT_DIR$/backend/pom.xml" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/pom.xml" />
         <option value="$PROJECT_DIR$/backend/IPLocation-parser/pom.xml" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" />
@@ -191,6 +194,13 @@
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" />
         <option value="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" />
+        <option value="$PROJECT_DIR$/backend/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" />
       </list>
     </option>
   </component>
@@ -200,6 +210,22 @@
         <option name="userSettingsFile" value="F:\server\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spark-sessionization-etl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spark-sessionization-etl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1388" />
@@ -225,8 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,87 +268,20 @@
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="iplocation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="IPLocation-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="iplocation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -331,7 +289,16 @@
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="avro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -340,45 +307,20 @@
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
+              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -419,54 +361,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -488,62 +382,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
-              <item name="dim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="matches" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="objectbuilder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="objectbuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -589,12 +428,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../模块10： [老汤]微职位：项目实战" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -617,11 +457,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\weblog-parser" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\IPLocatioin-parser\src\test\java" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\metadata\src\test" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\weblog-parser\src\main\resources" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\weblog-parser\src\test\java" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\resources" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala\com\twq\spark\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -796,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573360554142</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="backend功能接近全部实现">
+      <created>1573368659858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573368659858</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -810,30 +657,30 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294539" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40376008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34377798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -881,87 +728,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/ReferrerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/utils/ColumnReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/resources/targetPage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/metadata/src/test/test/java/com/twq/metadata/api/impl/MongoProfileConfigManagerTest.java" />
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/MongoDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/TargetPageInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/metadata/src/test/java/com/twq/metadata/api/impl/MongoProfileConfigManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,11 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1285#1286#0" expanded="false" />
-            <element signature="e#1326#1327#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,25 +760,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetConfigMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetConfigMatcher.java" />
     <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
           <caret line="41" column="72" lean-forward="false" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,23 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,19 +814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/metadata/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
           <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,33 +847,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/LogParserSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/LogParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/LogParserSetting.java" />
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/LogParser.java" />
     <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,18 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1023">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#366#367#0" expanded="false" />
-            <element signature="e#400#401#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1023">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,15 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,17 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1246,6 +912,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ColumnReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlParseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3378">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" />
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" />
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" />
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" />
+    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1254,46 +988,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2160">
-          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        <state relative-caret-position="27">
+          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Session.avsc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1351,7 +1106,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>IPLocation-parser</last-edited>
+          <last-edited>spark-sessionization-etl</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
