@@ -29,11 +29,11 @@ public class UrlParseUtilsTest {
         //规则的url，含有fragment，且fragment在query的后面
         String url = "https://www.underarmour.cn/s-HOVR?qf=11-149&pf=&sortStr=&nav=640#NewLaunch";
         UrlInfo info = UrlParseUtils.getInfoFromUrl(url);
-        Assert.assertEquals("qf=11-149&pf=&sortStr=&nav=640", info.getQuery());
-        Assert.assertEquals("https", info.getScheme());
-        Assert.assertEquals("www.underarmour.cn", info.getDomain());
-        Assert.assertEquals("/s-HOVR", info.getPath());
-        Assert.assertEquals("NewLaunch", info.getFragment());
+        assertEquals("qf=11-149&pf=&sortStr=&nav=640", info.getQuery());
+        Assert.assertEquals("https", info.getSchema());
+        assertEquals("www.underarmour.cn", info.getDomain());
+        assertEquals("/s-HOVR", info.getPath());
+        assertEquals("NewLaunch", info.getFragment());
     }
 
     @Test
@@ -41,11 +41,11 @@ public class UrlParseUtilsTest {
         //规则的url，含有fragment，且fragment在query的前面
         String url = "https://www.underarmour.cn/s-HOVR#NewLaunch?qf=11-149&pf=&sortStr=&nav=640";
         UrlInfo info = UrlParseUtils.getInfoFromUrl(url);
-        Assert.assertEquals("qf=11-149&pf=&sortStr=&nav=640", info.getQuery());
-        Assert.assertEquals("https", info.getScheme());
-        Assert.assertEquals("www.underarmour.cn", info.getDomain());
-        Assert.assertEquals("/s-HOVR", info.getPath());
-        Assert.assertEquals("NewLaunch", info.getFragment());
+        assertEquals("qf=11-149&pf=&sortStr=&nav=640", info.getQuery());
+        Assert.assertEquals("https", info.getSchema());
+        assertEquals("www.underarmour.cn", info.getDomain());
+        assertEquals("/s-HOVR", info.getPath());
+        assertEquals("NewLaunch", info.getFragment());
     }
 
     public void getInfoFromUrl_3() {
@@ -53,7 +53,7 @@ public class UrlParseUtilsTest {
         String url = "https://www.underarmour.cn/s-HOVR#44-1|NewLaunch|HOVR|HOVR|HOVR|201800607";
         UrlInfo info = UrlParseUtils.getInfoFromUrl(url);
         Assert.assertEquals("-", info.getQuery());
-        Assert.assertEquals("https", info.getScheme());
+        Assert.assertEquals("https", info.getSchema());
         Assert.assertEquals("www.underarmour.cn", info.getDomain());
         Assert.assertEquals("/s-HOVR", info.getPath());
         Assert.assertEquals("44-1|NewLaunch|HOVR|HOVR|HOVR|201800607", info.getFragment());
@@ -65,7 +65,7 @@ public class UrlParseUtilsTest {
         String url = "https://www.underarmour.cn/s-HOVR?qf=11-149&pf=&sortStr=&nav=640#44-1|NewLaunch|HOVR|HOVR|HOVR|201800607";
         UrlInfo info = UrlParseUtils.getInfoFromUrl(url);
         Assert.assertEquals("qf=11-149&pf=&sortStr=&nav=640", info.getQuery());
-        Assert.assertEquals("https", info.getScheme());
+        Assert.assertEquals("https", info.getSchema());
         Assert.assertEquals("www.underarmour.cn", info.getDomain());
         Assert.assertEquals("/s-HOVR", info.getPath());
         Assert.assertEquals("44-1|NewLaunch|HOVR|HOVR|HOVR|201800607", info.getFragment());
@@ -77,7 +77,7 @@ public class UrlParseUtilsTest {
         String url = "http://m.baidu.com:8080/from=1012637v/pu=sz%401320_480%2Ccuid%40_PHful8jS8_MuvtqgaHai_iaHalh8vi20aHda_OD2a8Euv8xga-18_uQvt_Ra2tDA%2Ccua%40_a-qi4ujvfg4NE6pI5me6NIy2IgUI2tYAC_uB%2Ccut%405kSYMltqeupciXM9ravjh_h0vCgcuDPWpi3pur_aC%2Cosname%40baiduboxapp%2Cctv%402%2Ccfrom%401012637v%2Ccen%40cuid_cua_cut%2Ccsrc%40app_mainbox_txt%2Cvmgdb%400020100228y/s?tn=zbios&word=%E4%B8%87%E8%89%BE%E5%8F%AF%E4%BB%8";
         UrlInfo info = UrlParseUtils.getInfoFromUrl(url);
         Assert.assertEquals("tn=zbios&word=%E4%B8%87%E8%89%BE%E5%8F%AF%E4%BB%8", info.getQuery());
-        Assert.assertEquals("http", info.getScheme());
+        Assert.assertEquals("http", info.getSchema());
         Assert.assertEquals("m.baidu.com:8080", info.getDomain());
         Assert.assertEquals("/from=1012637v/pu=sz@1320_480,cuid@_PHful8jS8_MuvtqgaHai_iaHalh8vi20aHda_OD2a8Euv8xga-18_uQvt_Ra2tDA,cua@_a-qi4ujvfg4NE6pI5me6NIy2IgUI2tYAC_uB,cut@5kSYMltqeupciXM9ravjh_h0vCgcuDPWpi3pur_aC,osname@baiduboxapp,ctv@2,cfrom@1012637v,cen@cuid_cua_cut,csrc@app_mainbox_txt,vmgdb@0020100228y/s", info.getPath());
     }

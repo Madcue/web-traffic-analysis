@@ -14,125 +14,127 @@ import java.util.Locale;
  * 存放公共信息的
  */
 public class BaseDataObject implements ParsedDataObject {
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    private int profileId;
-    private String trackerVersion;
-    private String command;
-    private String userId;
-    private String pvId;
-    private String serverTimeString;
-    private Date serverTime;
-    private Calendar calendar;
-    private String userAgent;
-    private UserAgent userAgentInfo;
-    private String clientIp;
-    private IpLocation ipLocation;
+     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+     private int profileId;
+     private String trackerVersion;
+     private String command;
+     private String userId;
+     private String pvId;
+     private String serverTimeString;
+     private Date serverTime;
+     private Calendar calendar;
+     private String userAgent;
+     private UserAgent userAgentInfo;
+     private String clientIp;
+     private IpLocation ipLocation;
 
-    public Date getServerTime() {
-        return serverTime;
-    }
 
-    public IpLocation getIpLocation() {
-        return ipLocation;
-    }
+     public int getProfileId() {
+          return profileId;
+     }
 
-    public void setIpLocation(IpLocation ipLocation) {
-        this.ipLocation = ipLocation;
-    }
+     public void setProfileId(int profileId) {
+          this.profileId = profileId;
+     }
 
-    public UserAgent getUserAgentInfo() {
-        return userAgentInfo;
-    }
+     public String getTrackerVersion() {
+          return trackerVersion;
+     }
 
-    public void setUserAgentInfo(UserAgent userAgentInfo) {
-        this.userAgentInfo = userAgentInfo;
-    }
+     public void setTrackerVersion(String trackerVersion) {
+          this.trackerVersion = trackerVersion;
+     }
 
-    public int getProfileId() {
-        return profileId;
-    }
+     public String getCommand() {
+          return command;
+     }
 
-    public void setProfileId(int profileId) {
-        this.profileId = profileId;
-    }
+     public void setCommand(String command) {
+          this.command = command;
+     }
 
-    public String getTrackerVersion() {
-        return trackerVersion;
-    }
+     public String getUserId() {
+          return userId;
+     }
 
-    public void setTrackerVersion(String trackerVersion) {
-        this.trackerVersion = trackerVersion;
-    }
+     public void setUserId(String userId) {
+          this.userId = userId;
+     }
 
-    public String getCommand() {
-        return command;
-    }
+     public String getPvId() {
+          return pvId;
+     }
 
-    public void setCommand(String command) {
-        this.command = command;
-    }
+     public void setPvId(String pvId) {
+          this.pvId = pvId;
+     }
 
-    public String getUserId() {
-        return userId;
-    }
+     public String getServerTimeString() {
+          return serverTimeString;
+     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+     public void setServerTimeString(String serverTimeString) {
+          this.serverTimeString = serverTimeString;
+          this.calendar = Calendar.getInstance(Locale.ENGLISH);
+          try {
+               this.serverTime = dateFormat.parse(serverTimeString);
+               calendar.setTime(this.serverTime);
+          } catch (ParseException e) {
+               e.printStackTrace();
+          }
+     }
 
-    public String getPvId() {
-        return pvId;
-    }
+     public int getHourOfDay() {
+          return calendar.get(Calendar.HOUR_OF_DAY);
+     }
 
-    public void setPvId(String pvId) {
-        this.pvId = pvId;
-    }
+     public String getDayOfWeek() {
+          return DateUtils.getChineseWeekStr(calendar.get(Calendar.DAY_OF_WEEK));
+     }
 
-    public String getServerTimeString() {
-        return serverTimeString;
-    }
+     public int getMonthOfYear() {
+          return calendar.get(Calendar.MONTH);
+     }
 
-    public void setServerTimeString(String serverTimeString) {
-        this.serverTimeString = serverTimeString;
-        this.calendar = Calendar.getInstance(Locale.ENGLISH);
-        try {
-            this.serverTime = dateFormat.parse(serverTimeString);
-            calendar.setTime(this.serverTime);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
+     public int getWeekOfYear() {
+          calendar.setMinimalDaysInFirstWeek(7);
+          return calendar.get(Calendar.WEEK_OF_YEAR);
+     }
 
-    public int getHourOfDay() {
-        return calendar.get(Calendar.HOUR_OF_DAY);
-    }
+     public Date getServerTime() {
+          return serverTime;
+     }
 
-    public String getDayOfWeek() {
-        return DateUtils.getChineseWeekStr(calendar.get(Calendar.DAY_OF_WEEK));
-    }
 
-    public int getMonthOfYear() {
-        return calendar.get(Calendar.MONTH);
-    }
+     public String getUserAgent() {
+          return userAgent;
+     }
 
-    public int getWeekOfYear() {
-        calendar.setMinimalDaysInFirstWeek(7);
-        return calendar.get(Calendar.WEEK_OF_YEAR);
-    }
+     public void setUserAgent(String userAgent) {
+          this.userAgent = userAgent;
+     }
 
-    public String getUserAgent() {
-        return userAgent;
-    }
+     public UserAgent getUserAgentInfo() {
+          return userAgentInfo;
+     }
 
-    public void setUserAgent(String userAgent) {
-        this.userAgent = userAgent;
-    }
+     public void setUserAgentInfo(UserAgent userAgentInfo) {
+          this.userAgentInfo = userAgentInfo;
+     }
 
-    public String getClientIp() {
-        return clientIp;
-    }
+     public String getClientIp() {
+          return clientIp;
+     }
 
-    public void setClientIp(String clientIp) {
-        this.clientIp = clientIp;
-    }
+     public void setClientIp(String clientIp) {
+          this.clientIp = clientIp;
+     }
+
+     public IpLocation getIpLocation() {
+          return ipLocation;
+     }
+
+     public void setIpLocation(IpLocation ipLocation) {
+          this.ipLocation = ipLocation;
+     }
 }

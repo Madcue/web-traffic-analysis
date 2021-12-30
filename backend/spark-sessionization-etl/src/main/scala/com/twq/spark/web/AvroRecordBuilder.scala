@@ -1,7 +1,7 @@
 package com.twq.spark.web
 
 import com.twq.parser.dataobject.{BaseDataObject, HeartbeatDataObject, McDataObject, PvDataObject}
-import com.twq.web.{Conversion, PageView, Session, Heartbeat, MouseClick}
+import com.twq.web.{Conversion, Heartbeat, MouseClick, PageView, Session}
 import eu.bitwalker.useragentutils.DeviceType
 import org.apache.avro.Schema
 import org.apache.avro.generic.GenericRecord
@@ -9,30 +9,34 @@ import org.apache.avro.generic.GenericRecord
 import scala.collection.immutable.HashMap
 
 object AvroRecordBuilder {
-  //所有实体的类名
+  //所有实体的SimpleName类名(Avro to JavaBeans 通过builder构建调用build将构造器中的数据转为实体Record(注:Avro to JavaBeans)
+  //派生session字段 除heartbeat外 Record设定好后通过Avro组件写HDFS
+  // objective[all DataObjects into Record and use Record])
   val SESSION = classOf[Session].getSimpleName
   val CONVERSION = classOf[Conversion].getSimpleName
   val HEARTBEAT = classOf[Heartbeat].getSimpleName
   val MOUSE_CLICK = classOf[MouseClick].getSimpleName
   val PAGE_VIEW = classOf[PageView].getSimpleName
-
-  //所有实体对应的Schema
+  //所有实体对应的Schema(.avsc)
   val SCHEMAS = HashMap[String, Schema](
     CONVERSION -> Conversion.getClassSchema,
     HEARTBEAT -> Heartbeat.getClassSchema,
     MOUSE_CLICK -> MouseClick.getClassSchema,
     PAGE_VIEW -> PageView.getClassSchema,
-    SESSION -> Session.getClassSchema)
+    SESSION -> Session.getClassSchema
+  )
 }
 
 trait AvroRecordBuilder {
 
   import com.twq.parser.utils.ParserUtils._
 
+  //UserSessionDataAggregator--->buildSession(data.pvData, data.selectedPVOpt, data.selectedFirstDataObject, sessionBuilder)
   def buildSession(pvs: Seq[PvDataObject],
-                   selectedPVOpt: Option[PvDataObject],
+                   selectedPvOpt: Option[PvDataObject],
                    selectedFirstDataObject: BaseDataObject,
-                   sessionBuilder: Session.Builder): Session = {
+                   sessionBuilder: Session.Builder
+                  ): Session = {
     //通用字段
     sessionBuilder.setTrackerVersion(notNull(selectedFirstDataObject.getTrackerVersion))
     sessionBuilder.setProfileId(selectedFirstDataObject.getProfileId)
@@ -52,19 +56,18 @@ trait AvroRecordBuilder {
     val longitude = selectedFirstDataObject.getIpLocation.getLongitude
     sessionBuilder.setLongitude(if (isNullOrEmptyOrDash(longitude)) longitude.toFloat else 0F)
     val latitude = selectedFirstDataObject.getIpLocation.getLatitude
-    sessionBuilder.setLatitude(if (isNullOrEmptyOrDash(latitude)) longitude.toFloat else 0F)
+    sessionBuilder.setLatitude(if (isNullOrEmptyOrDash(latitude)) latitude.toFloat else 0F)
     sessionBuilder.setClientIp(selectedFirstDataObject.getClientIp)
 
-    val headPV = pvs.head
+    val headPv = pvs.head
 
-    val pv = selectedPVOpt getOrElse headPV
-
+    val pv = selectedPvOpt getOrElse headPv
     //来源维度
     sessionBuilder.setReferrerUrl(pv.getReferrerInfo.getUrl)
     sessionBuilder.setReferrerHostname(notNull(pv.getReferrerInfo.getDomain).toLowerCase)
     sessionBuilder.setSourceType(notNull(pv.getReferrerInfo.getReferType))
     sessionBuilder.setChannelName(notNull(pv.getReferrerInfo.getChannel))
-    sessionBuilder.setSearchEngine(notNull(pv.getReferrerInfo.getSearchEngineName))
+    sessionBuilder.setSearchEngine(notNull(notNull(pv.getReferrerInfo.getSearchEngineName)))
     sessionBuilder.setKeywords(notNull(pv.getReferrerInfo.getKeyword))
     sessionBuilder.setKeywordId(notNull(pv.getReferrerInfo.getEqId))
 
@@ -101,10 +104,12 @@ trait AvroRecordBuilder {
     if (!isNullOrEmptyOrDash(pv.getBrowserInfo.getDeviceName)) {
       sessionBuilder.setDeviceName(notNull(pv.getBrowserInfo.getDeviceName))
     }
-
+    //Session J-bean build()
     sessionBuilder.build()
+
   }
 
+  //buildPageView(currentPv, recordBuilder, session)
   def buildPageView(pv: PvDataObject, recordBuilder: PageView.Builder, session: Session): PageView = {
     recordBuilder.setPageViewId(pv.getPvId)
     recordBuilder.setPageViewServerTime(pv.getServerTimeString)
@@ -116,14 +121,14 @@ trait AvroRecordBuilder {
     val pageView = recordBuilder.build()
     fillBase(pageView, pv) //基本字段的填充
     fillTimeRelated(pageView, pv) //时间相关字段的填充
-    fillSession(pageView, session) //派生会话字段
+    fillSession(pageView, session) //派生会话字段,除了HeartBeat表
     pageView
   }
 
-  def buildHeartbeat(hb: HeartbeatDataObject, session: Session): Heartbeat = {
+  def buildHeartBeat(hb: HeartbeatDataObject, session: Session): Heartbeat = {
     val record = Heartbeat.newBuilder().build()
-    fillBase(record, hb)
-    record.setServerSessionId(session.getServerSessionId)
+    fillBase(record, hb)//Avro avsc 底层 Record put抽象 填充实体(表)
+    record.setServerSessionId(session.getServerSessionId)//按照Avro to JBeans set抽象 填充实体(表)
     record.setServerTime(notNull(hb.getServerTimeString))
     record.setLoadingDuration(hb.getLoadingDuration)
     record.setPageViewId(hb.getPvId)
@@ -135,7 +140,7 @@ trait AvroRecordBuilder {
     fillBase(record, mc)
     fillTimeRelated(record, mc)
     fillSession(record, session)
-    record.setPageViewId(notNull(mc.getPvId))
+    record.setPageViewId(mc.getPvId)
     record.setMouseClickServerTime(notNull(mc.getServerTimeString))
     record.setClickPageUrl(notNull(mc.getUrl))
     record.setClickPageHostname(notNull(mc.getPageHostName).toLowerCase)
@@ -171,20 +176,24 @@ trait AvroRecordBuilder {
     conversion
   }
 
+
+  //使用GenericRecord接口 操作Record
   private def fillBase(record: GenericRecord, base: BaseDataObject): Unit = {
     record.put("tracker_version", base.getTrackerVersion)
     record.put("profile_id", base.getProfileId)
     record.put("user_id", notNull(base.getUserId))
+
   }
 
   private def fillTimeRelated(record: GenericRecord, base: BaseDataObject): Unit = {
-    record.put("hour_of_day", base.getHourOfDay)
+    record.put("tracker_version", base.getHourOfDay)
     record.put("month_of_year", base.getMonthOfYear)
     record.put("day_of_week", base.getDayOfWeek)
     record.put("week_of_year", base.getWeekOfYear)
   }
 
-  private def fillSession(record: GenericRecord, session: Session) {
+  private def fillSession(record: GenericRecord, session: Session): Unit = {
+
     record.put("days_since_last_visit", session.getDaysSinceLastVisit)
     record.put("user_visit_number", session.getUserVisitNumber)
     record.put("is_new_visitor", session.getIsNewVisitor)
@@ -255,5 +264,7 @@ trait AvroRecordBuilder {
     record.put("target_count", session.getTargetCount)
     record.put("target_distinct_count", session.getTargetDistinctCount)
     record.put("mouse_click_count", session.getMouseClickCount)
+
   }
+
 }

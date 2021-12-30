@@ -136,8 +136,8 @@
                             <goal>schema</goal>
                         </goals>
                         <configuration>
-                            <sourceDirectory>${project.basedir}/src/main/avro</sourceDirectory>
-                            <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                            <sourceDirectory>/src/main/avro</sourceDirectory>
+                            <outputDirectory>/src/main/java/com/twq/web</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

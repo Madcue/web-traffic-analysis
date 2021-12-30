@@ -1,126 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Conversion.avsc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Heartbeat.avsc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/MouseClick.avsc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/PageView.avsc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Session.avsc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
+    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="spark会话切割及ETL实现">
+      <change afterPath="$PROJECT_DIR$/backend/metadata/src/main/resources/targetPage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/script/etl/web_etl_daily.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/script/init/etl_init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/script/init/etl_temp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/script/init/hbase_init.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Conversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/ConversionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Heartbeat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/MouseClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/PageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/test/java/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponentTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/test/java/scala/com/twq/spark/web/session/SessionGeneratorTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/MongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/MongoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/ProfileConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/ProfileConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/model/TargetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/model/TargetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-preparse-etl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/prepaser/PreparseETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/prepaser/PreparseETL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/core-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/SearchEngineConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/SearchEngineConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/TargetConfigMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/TargetConfigMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/ProfileConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/ProfileConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/SearchEngineConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/SearchEngineConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/DefaultProfileConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/DefaultProfileConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/FileSearchEngineConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/FileSearchEngineConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/SearchEngineConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/SearchEngineConfigService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/InvalidLogObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/InvalidLogObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/ParsedDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/ParsedDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/TargetPageDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/TargetPageDataObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/AdInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/AdInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/BrowserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/BrowserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/ReferrerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/ReferrerInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/SiteResourceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/SiteResourceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/TargetPageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/TargetPageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/MatchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/MatchType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/UrlStringMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/UrlStringMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ColumnReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ColumnReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ParserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/QueryAndFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/QueryAndFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlParseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlParseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/utils/UrlParseUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/utils/UrlParseUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/backend/target/" />
-    <ignored path="$PROJECT_DIR$/tracker-logServer/target/" />
-    <ignored path="$PROJECT_DIR$/frontend/target/" />
-    <ignored path="$PROJECT_DIR$/backend/weblog-preparser/target/" />
-    <ignored path="$PROJECT_DIR$/backend/spark-preparse-etl/target/" />
-    <ignored path="$PROJECT_DIR$/backend/weblog-parser/target/" />
-    <ignored path="$PROJECT_DIR$/backend/IPLocatioin-parser/target/" />
-    <ignored path="$PROJECT_DIR$/backend/metadata/target/" />
-    <ignored path="$PROJECT_DIR$/backend/IPLocation-parser/target/" />
-    <ignored path="$PROJECT_DIR$/backend/spark-sessionization-etl/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeartbeatDataObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeartbeatDataObjectBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PvDataObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.avsc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/avro/Session.avsc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataRecords.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,6 +110,7 @@
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Scala Trait" />
       </list>
     </option>
   </component>
@@ -140,7 +123,15 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hotfix" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="345fcfcb-3594-4268-b221-5918721ca354" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -207,7 +198,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="F:\server\apache-maven-3.5.0\conf\settings.xml" />
+        <option name="localRepository" value="F:\repository" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -227,12 +218,16 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1388" />
     <option name="y" value="11" />
     <option name="width" value="1177" />
     <option name="height" value="1371" />
   </component>
+  <component name="ProjectId" id="2281KjeW8K6gljxvvtmSX20Zamg" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -251,7 +246,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,35 +287,7 @@
               <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="avro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="spark-sessionization-etl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -361,17 +328,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-parser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -397,86 +353,60 @@
               <item name="weblog-preparser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-preparser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-preparser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-traffic-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-traffic-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="weblog-preparser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="prepaser" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../模块10： [老汤]微职位：项目实战" />
-    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.17266187" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala\com\twq\spark\web" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala\com\twq\spark\web\external" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\test\java" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala\com\twq\spark\web\session" />
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\java\com\twq\web" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.twq" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.twq.parser.objectbuilder.helper" />
       <recent name="com.twq.parser.utils" />
       <recent name="com.twq.preparser" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.twq" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\resources" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main" />
-      <recent name="F:\51CTO\bigdata\workspace\web-traffic-analysis\backend\spark-sessionization-etl\src\main\scala\com\twq\spark\web" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.twq.spark.web" />
+      <recent name="com.twq.spark.web.external" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UrlParseUtilsTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -485,118 +415,79 @@
       <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlParseUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weblog-parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twq.parser.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twq.parser.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.twq.parser.utils.UrlParseUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="webLogPreParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="weblog-preparser" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.twq.prepaser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="weblog-preparser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twq.preparser" />
       <option name="MAIN_CLASS_NAME" value="com.twq.preparser.webLogPreParserTest" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.webLogPreParserTest" />
+      <list>
+        <item itemvalue="JUnit.UrlParseUtilsTest" />
+        <item itemvalue="JUnit.webLogPreParserTest" />
+        <item itemvalue="JUnit.webLogPreParserTest" />
+        <item itemvalue="JUnit.webLogPreParserTest" />
+        <item itemvalue="JUnit.webLogPreParserTest" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -643,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573368659858</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="spark会话切割及ETL实现">
+      <created>1573733195957</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573733195958</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -653,7 +551,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1388" y="11" width="1177" height="1371" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -663,11 +560,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294539" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34377798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35631156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -711,8 +608,34 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/realease" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试删除无用文件" />
@@ -721,11 +644,19 @@
     <MESSAGE value="URL解析＋ColumnReader实现" />
     <MESSAGE value="TargetPage功能实现" />
     <MESSAGE value="backend功能接近全部实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend功能接近全部实现" />
+    <MESSAGE value="spark会话切割及ETL实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="spark会话切割及ETL实现" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/LogParserTest.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java">
@@ -835,14 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -894,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -919,6 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +876,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" />
     <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" />
-    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" />
     <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" />
     <entry file="file://$PROJECT_DIR$/backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1049,6 +965,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#27#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>

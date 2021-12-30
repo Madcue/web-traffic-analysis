@@ -1,5 +1,7 @@
 package com.twq.spark.web
 
+import com.twq.spark.web.CombinedId.SEPARATOR
+
 object CombinedId {
   // Both the 'profile id' and 'user id' are either 'numeric' or 'alphanumeric', separator with one char is enough
   private val SEPARATOR = "@"
@@ -16,20 +18,18 @@ object CombinedId {
     CombinedId(parts(0).tail.toInt, parts(1))
   }
 }
-
 /**
   *  唯一标识访问了某一个网站的访客
   * @param profileId 访客访问的网站的唯一标识
   * @param userId 访客的唯一标识
   */
 case class CombinedId(profileId: Int, userId: String) {
-  import CombinedId._
-
+  //import CombinedId._
   /**
     *  编码访问了某一个网站的访客的唯一标识
     * @return
     */
-  def encode: String ={
+  def encode : String = {
     // the encoding scheme:
     // "${lastDecimalBitOfUserIdHash}${profileId}${SEPARATOR}${userId}"
     s"${userId.hashCode.toString.last}${profileId}${SEPARATOR}${userId}"

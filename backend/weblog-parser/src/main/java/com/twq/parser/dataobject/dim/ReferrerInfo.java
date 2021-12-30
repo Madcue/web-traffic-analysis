@@ -2,88 +2,91 @@ package com.twq.parser.dataobject.dim;
 
 /**
  * 来源信息类
- *  https://www.baidu.com/link?url=fRlsUPZu1cJZ88BfW725L_c81B1G_roiDbQ9oNnhlDF3VfjE6FGAfSa1PLOx7ialgsgvAmftuGN7s6pbUpP0BK&wd=&eqid=ead342b60003ccd3000000035b3b492a
+ *  https://www.baidu.com/link
+ *  ?url=fRlsUPZu1cJZ88BfW725L_c81B1G_roiDbQ9oNnhlDF3VfjE6FGAfSa1PLOx7ialgsgvAmftuGN7s6pbUpP0BK
+ *  &wd=
+ *  &eqid=ead342b60003ccd3000000035b3b492a
  */
 public class ReferrerInfo {
-    private String url;
-    private String domain;
-    private String query;
-    private String urlWithoutQuery;
-    private String channel;
-    private String referType;
-    private String searchEngineName;
-    private String keyword;
-    private String eqId;
+     private String url;
+     private String domain;
+     private String query;
+     private String urlWithoutQuery;
+     private String channel;
+     private String referType;//来源引用类型
+     private String searchEngineName;
+     private String keyword;
+     private String eqId;
 
-    public String getUrl() {
-        return url;
-    }
+     public String getUrl() {
+          return url;
+     }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+     public void setUrl(String url) {
+          this.url = url;
+     }
 
-    public String getDomain() {
-        return domain;
-    }
+     public String getDomain() {
+          return domain;
+     }
 
-    public void setDomain(String domain) {
-        this.domain = domain;
-    }
+     public void setDomain(String domain) {
+          this.domain = domain;
+     }
 
-    public String getChannel() {
-        return channel;
-    }
+     public String getQuery() {
+          return query;
+     }
 
-    public void setChannel(String channel) {
-        this.channel = channel;
-    }
+     public void setQuery(String query) {
+          this.query = query;
+     }
 
-    public String getReferType() {
-        return referType;
-    }
+     public String getUrlWithoutQuery() {
+          return urlWithoutQuery;
+     }
 
-    public void setReferType(String referType) {
-        this.referType = referType;
-    }
+     public void setUrlWithoutQuery(String urlWithoutQuery) {
+          this.urlWithoutQuery = urlWithoutQuery;
+     }
 
-    public String getSearchEngineName() {
-        return searchEngineName;
-    }
+     public String getChannel() {
+          return channel;
+     }
 
-    public void setSearchEngineName(String searchEngineName) {
-        this.searchEngineName = searchEngineName;
-    }
+     public void setChannel(String channel) {
+          this.channel = channel;
+     }
 
-    public String getEqId() {
-        return eqId;
-    }
+     public String getReferType() {
+          return referType;
+     }
 
-    public void setEqId(String eqId) {
-        this.eqId = eqId;
-    }
+     public void setReferType(String referType) {
+          this.referType = referType;
+     }
 
-    public String getQuery() {
-        return query;
-    }
+     public String getSearchEngineName() {
+          return searchEngineName;
+     }
 
-    public void setQuery(String query) {
-        this.query = query;
-    }
+     public void setSearchEngineName(String searchEngineName) {
+          this.searchEngineName = searchEngineName;
+     }
 
-    public String getUrlWithoutQuery() {
-        return urlWithoutQuery;
-    }
+     public String getKeyword() {
+          return keyword;
+     }
 
-    public void setUrlWithoutQuery(String urlWithoutQuery) {
-        this.urlWithoutQuery = urlWithoutQuery;
-    }
+     public void setKeyword(String keyword) {
+          this.keyword = keyword;
+     }
 
-    public String getKeyword() {
-        return keyword;
-    }
+     public String getEqId() {
+          return eqId;
+     }
 
-    public void setKeyword(String keyword) {
-        this.keyword = keyword;
-    }
+     public void setEqId(String eqId) {
+          this.eqId = eqId;
+     }
 }

@@ -1,124 +1,122 @@
 package com.twq.prepaser;
 
 public class PreParsedLog {
-    private String serverTime;
-    private String serverIp;
-    private String method;
-    private String uriStem;
-    private String queryString;
-    private int serverPort;
-    private String clientIp;
-    private String userAgent;
-    private int profileId;
-    private String command;
-    //用于我们的hive表的分区
-    private int year;
-    private int month;
-    private int day;
+     private String serverTime;
+     private String serverIp;
+     private String method;
+     private String uriStem;
+     private String queryString;
+     private int serverPort;
+     private String ClientIp;
+     private String userAgent;
+     private int profileId;
+     private String command;
+     //用于我们的hive表的分区
+     private int year;
+     private int month;
+     private int day;
 
-    public String getServerTime() {
-        return serverTime;
-    }
+     public String getServerTime() {
+          return serverTime;
+     }
 
-    public void setServerTime(String serverTime) {
-        this.serverTime = serverTime;
-    }
+     public void setServerTime(String serverTime) {
+          this.serverTime = serverTime;
+     }
 
-    public String getServerIp() {
-        return serverIp;
-    }
+     public String getServerIp() {
+          return serverIp;
+     }
 
-    public void setServerIp(String serverIp) {
-        this.serverIp = serverIp;
-    }
+     public void setServerIp(String serverIp) {
+          this.serverIp = serverIp;
+     }
 
-    public String getMethod() {
-        return method;
-    }
+     public String getMethod() {
+          return method;
+     }
 
-    public void setMethod(String method) {
-        this.method = method;
-    }
+     public void setMethod(String method) {
+          this.method = method;
+     }
 
-    public String getUriStem() {
-        return uriStem;
-    }
+     public String getUriStem() {
+          return uriStem;
+     }
 
-    public void setUriStem(String uriStem) {
-        this.uriStem = uriStem;
-    }
+     public void setUriStem(String uriStem) {
+          this.uriStem = uriStem;
+     }
 
-    public String getQueryString() {
-        return queryString;
-    }
+     public String getQueryString() {
+          return queryString;
+     }
 
-    public void setQueryString(String queryString) {
-        this.queryString = queryString;
-    }
+     public void setQueryString(String queryString) {
+          this.queryString = queryString;
+     }
 
-    public int getServerPort() {
-        return serverPort;
-    }
+     public int getServerPort() {
+          return serverPort;
+     }
 
-    public void setServerPort(int serverPort) {
-        this.serverPort = serverPort;
-    }
+     public void setServerPort(int serverPort) {
+          this.serverPort = serverPort;
+     }
 
-    public String getClientIp() {
-        return clientIp;
-    }
+     public String getClientIp() {
+          return ClientIp;
+     }
 
-    public void setClientIp(String clientIp) {
-        this.clientIp = clientIp;
-    }
+     public void setClientIp(String clientIp) {
+          ClientIp = clientIp;
+     }
 
-    public String getUserAgent() {
-        return userAgent;
-    }
+     public String getUserAgent() {
+          return userAgent;
+     }
 
-    public void setUserAgent(String userAgent) {
-        this.userAgent = userAgent;
-    }
+     public void setUserAgent(String userAgent) {
+          this.userAgent = userAgent;
+     }
 
-    public int getProfileId() {
-        return profileId;
-    }
+     public int getProfileId() {
+          return profileId;
+     }
 
-    public void setProfileId(int profileId) {
-        this.profileId = profileId;
-    }
+     public void setProfileId(int profileId) {
+          this.profileId = profileId;
+     }
 
-    public String getCommand() {
-        return command;
-    }
+     public String getCommand() {
+          return command;
+     }
 
-    public void setCommand(String command) {
-        this.command = command;
-    }
+     public void setCommand(String command) {
+          this.command = command;
+     }
 
-    public int getYear() {
-        return year;
-    }
+     public int getYear() {
+          return year;
+     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
+     public void setYear(int year) {
+          this.year = year;
+     }
 
-    public int getMonth() {
-        return month;
-    }
+     public int getMonth() {
+          return month;
+     }
 
-    public void setMonth(int month) {
-        this.month = month;
-    }
+     public void setMonth(int month) {
+          this.month = month;
+     }
 
-    public int getDay() {
-        return day;
-    }
+     public int getDay() {
+          return day;
+     }
 
-    public void setDay(int day) {
-        this.day = day;
-    }
-
-
+     public void setDay(int day) {
+          this.day = day;
+     }
 }

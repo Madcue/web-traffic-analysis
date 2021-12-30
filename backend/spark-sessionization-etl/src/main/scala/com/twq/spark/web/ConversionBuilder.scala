@@ -9,6 +9,7 @@ object ConversionBuilder {
 }
 
 trait ConversionBuilder {
+
   import ConversionBuilder._
   import com.twq.parser.utils.ParserUtils._
 
@@ -16,20 +17,22 @@ trait ConversionBuilder {
 
   def buildConversions(sessionId: Long,
                        targetInfoData: Seq[(TargetPageDataObject, TargetPageInfo)],
-                       eventData: Seq[EventDataObject]): Seq[Conversion] = {
-    val event2Conversions = getConversionFromEvent(eventData, sessionId)
+                       eventData: Seq[EventDataObject]
+                      ): Seq[Conversion] = {
+    val envent2Conversions = getConversionFromEvent(eventData, sessionId)
     val targetPage2Conversions = getConversionFromTargetPage(targetInfoData, sessionId)
 
-    event2Conversions ++ targetPage2Conversions
+    envent2Conversions ++ targetPage2Conversions
   }
 
   /**
-    *  事件转成转化
+    * 事件转成转化
+    *
     * @param eventData
     * @param sessionId
     * @return
     */
-  private def getConversionFromEvent(eventData: Seq[EventDataObject], sessionId: Long) = {
+  private def getConversionFromEvent(eventData: Seq[EventDataObject], sessionId: Long): Seq[Conversion] = {
     eventData map { event =>
       val conversion = Conversion.newBuilder().build()
       conversion.setConversionId(generateConversionId(sessionId))
@@ -43,11 +46,13 @@ trait ConversionBuilder {
       conversion.setConversionValue(event.getEventValue)
       conversion.setConversionServerTime(event.getServerTimeString)
       conversion
+
     }
   }
 
   /**
-    *  目标页面也是转化
+    * 目标页面也是转化
+    *
     * @param activeTargetInfoArray
     * @param sessionId
     * @return
@@ -66,6 +71,7 @@ trait ConversionBuilder {
       conversion.setConversionServerTime(target.getServerTimeString)
       conversion
     }
+
   }
 
   private def generateConversionId(sessionId: Long) = {
