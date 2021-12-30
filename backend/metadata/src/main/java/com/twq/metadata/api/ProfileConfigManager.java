@@ -3,7 +3,7 @@ package com.twq.metadata.api;
 import com.twq.metadata.model.TargetPage;
 
 import java.util.List;
-
+//这里其实是Dao的底层了
 public interface ProfileConfigManager {
     /**
      * 加载所有的目标页面配置

@@ -2,80 +2,86 @@ package com.twq.parser.dataobject.dim;
 
 import com.twq.parser.utils.ParserUtils;
 
+/**
+ * 广告信息类
+ */
+
 public class AdInfo {
-    private String utmCampaign = "-";
-    private String utmContent = "-";
-    private String utmTerm = "-";
-    private String utmSource = "-";
-    private String utmMedium = "-";
-    //额外加的两个广告参数
-    private String utmAdGroup = "-";
-    private String utmChannel = "-";
-    /**
-     *  判断是否为付费流量
-     *  七大广告参数如果有一个值不为空的话，则是付费流量
-     * @return
-     */
-    public boolean isPaid() {
-        return !ParserUtils.isNullOrEmptyOrDash(utmCampaign) || !ParserUtils.isNullOrEmptyOrDash(utmContent) ||
-                !ParserUtils.isNullOrEmptyOrDash(utmTerm) || !ParserUtils.isNullOrEmptyOrDash(utmSource) ||
-                !ParserUtils.isNullOrEmptyOrDash(utmAdGroup) || !ParserUtils.isNullOrEmptyOrDash(utmChannel) ||
-                !ParserUtils.isNullOrEmptyOrDash(utmMedium);
-    }
+     private String utmCampaign = "-";//活动
+     private String utmContent = "-";//内容
+     private String utmTerm = "-";//词条
+     private String utmSource = "-";//来源
+     private String utmMedium = "-";//存储媒介
+     //额外加的两个广告参数
+     private String utmAdGroup = "-";//ad组
+     private String utmChannel = "-";//系列渠道
 
-    public String getUtmCampaign() {
-        return utmCampaign;
-    }
+     /**
+      * 判断是否为付费流量
+      * 七大广告参数如果有一个值不为空的话，则是付费流量
+      *
+      * @return
+      */
+     public boolean isPaid() {
+          return !ParserUtils.isNullOrEmptyOrDash(utmCampaign) || !ParserUtils.isNullOrEmptyOrDash(utmContent)
+                  || !ParserUtils.isNullOrEmptyOrDash(utmTerm) || !ParserUtils.isNullOrEmptyOrDash(utmSource)
+                  || !ParserUtils.isNullOrEmptyOrDash(utmAdGroup) || !ParserUtils.isNullOrEmptyOrDash(utmChannel)
+                  || !ParserUtils.isNullOrEmptyOrDash(utmMedium);
+     }
 
-    public void setUtmCampaign(String utmCampaign) {
-        this.utmCampaign = utmCampaign;
-    }
+     public String getUtmCampaign() {
+          return utmCampaign;
+     }
 
-    public String getUtmContent() {
-        return utmContent;
-    }
+     public void setUtmCampaign(String utmCampaign) {
+          this.utmCampaign = utmCampaign;
+     }
 
-    public void setUtmContent(String utmContent) {
-        this.utmContent = utmContent;
-    }
+     public String getUtmContent() {
+          return utmContent;
+     }
 
-    public String getUtmTerm() {
-        return utmTerm;
-    }
+     public void setUtmContent(String utmContent) {
+          this.utmContent = utmContent;
+     }
 
-    public void setUtmTerm(String utmTerm) {
-        this.utmTerm = utmTerm;
-    }
+     public String getUtmTerm() {
+          return utmTerm;
+     }
 
-    public String getUtmSource() {
-        return utmSource;
-    }
+     public void setUtmTerm(String utmTerm) {
+          this.utmTerm = utmTerm;
+     }
 
-    public void setUtmSource(String utmSource) {
-        this.utmSource = utmSource;
-    }
+     public String getUtmSource() {
+          return utmSource;
+     }
 
-    public String getUtmMedium() {
-        return utmMedium;
-    }
+     public void setUtmSource(String utmSource) {
+          this.utmSource = utmSource;
+     }
 
-    public void setUtmMedium(String utmMedium) {
-        this.utmMedium = utmMedium;
-    }
+     public String getUtmMedium() {
+          return utmMedium;
+     }
 
-    public String getUtmAdGroup() {
-        return utmAdGroup;
-    }
+     public void setUtmMedium(String utmMedium) {
+          this.utmMedium = utmMedium;
+     }
 
-    public void setUtmAdGroup(String utmAdGroup) {
-        this.utmAdGroup = utmAdGroup;
-    }
+     public String getUtmAdGroup() {
+          return utmAdGroup;
+     }
 
-    public String getUtmChannel() {
-        return utmChannel;
-    }
+     public void setUtmAdGroup(String utmAdGroup) {
+          this.utmAdGroup = utmAdGroup;
+     }
 
-    public void setUtmChannel(String utmChannel) {
-        this.utmChannel = utmChannel;
-    }
+     public String getUtmChannel() {
+          return utmChannel;
+     }
+
+     public void setUtmChannel(String utmChannel) {
+          this.utmChannel = utmChannel;
+     }
 }

@@ -1,20 +1,23 @@
 package com.twq.parser.configuration;
 
 import java.util.Map;
-
+//这是预处理日志后 充实的数据实体
 public class ReferUrlAndParams {
-    private String referUrlWithoutQuery;
-    private Map<String,String> params;
+     //去掉query的来源url
+     private String referUrlWithoutQuery;
+     //来源url中的query参数
+     private Map<String, String> params;
 
-    public ReferUrlAndParams(String referUrlWithoutQuery,Map<String,String> params){
-        this.referUrlWithoutQuery=referUrlWithoutQuery;
-        this.params=params;
-    }
-    public String getReferUrlWithoutQuery() {
-        return referUrlWithoutQuery;
-    }
+     public ReferUrlAndParams(String referUrlWithoutQuery, Map<String, String> params) {
+          this.referUrlWithoutQuery = referUrlWithoutQuery;
+          this.params = params;
+     }
 
-    public Map<String, String> getParams() {
-        return params;
-    }
+     public String getReferUrlWithoutQuery() {
+          return referUrlWithoutQuery;
+     }
+
+     public Map<String, String> getParams() {
+          return params;
+     }
 }
