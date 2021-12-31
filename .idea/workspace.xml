@@ -4,97 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="spark会话切割及ETL实现">
-      <change afterPath="$PROJECT_DIR$/backend/metadata/src/main/resources/targetPage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/script/etl/web_etl_daily.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/script/init/etl_init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/script/init/etl_temp.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/script/init/hbase_init.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Conversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/ConversionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Heartbeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/MouseClick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/PageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/java/com/twq/web/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/test/java/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponentTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/test/java/scala/com/twq/spark/web/session/SessionGeneratorTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="51b479aa-71f8-4d17-be44-c0178aaa172b" name="Default" comment="WEB_ETL完成,后端功能全实现,待测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpLocationParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/IPLocation-parser/src/main/java/com/twq/iplocation/IpRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/MongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/MongoDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/ProfileConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/ProfileConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/api/impl/MongoProfileConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/model/TargetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/metadata/src/main/java/com/twq/metadata/model/TargetPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-preparse-etl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/prepaser/PreparseETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-preparse-etl/src/main/scala/com/twq/prepaser/PreparseETL.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/resources/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/resources/core-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroOutputComponent.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/AvroRecordBuilder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/CombinedId.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/ConversionBuilder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/PartitionProcessor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/RichCollection.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebETL.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebLogParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/WebRegistrator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseSnapshotAdmin.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HBaseUserVisitInfoComponent.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/HbaseConnectionFactory.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/external/UserVisitInfoComponent.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/ClassifiedSessionData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/DataRecords.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/SessionGenerator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/backend/spark-sessionization-etl/src/main/scala/com/twq/spark/web/session/UserSessionDataAggregator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/LogParserSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/ReferUrlAndParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/SearchEngineConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/SearchEngineConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/TargetConfigMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/TargetConfigMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/ProfileConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/ProfileConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/SearchEngineConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/SearchEngineConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/DefaultProfileConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/DefaultProfileConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/FileSearchEngineConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/loader/impl/FileSearchEngineConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/SearchEngineConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/SearchEngineConfigService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/configuration/service/TargetPageConfigService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/BaseDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/EventDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/HeartbeatDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/InvalidLogObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/InvalidLogObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/McDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/ParsedDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/ParsedDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/PvDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/TargetPageDataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/TargetPageDataObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/AdInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/AdInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/BrowserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/BrowserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/ReferrerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/ReferrerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/SiteResourceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/SiteResourceInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/TargetPageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/dataobject/dim/TargetPageInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/MatchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/MatchType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/StringMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/UrlStringMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/matches/UrlStringMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/AbstractDataObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/EventDataObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/HeartbeatDataObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/MouseClickDataObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/PvDataObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/SearchEngineNameUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/objectbuilder/helper/TargetPageAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ColumnReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ColumnReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/ParserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/QueryAndFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/QueryAndFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlParseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/main/java/com/twq/parser/utils/UrlParseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/utils/UrlParseUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-parser/src/test/java/com/twq/parser/utils/UrlParseUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/PreParsedLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/weblog-preparser/src/main/java/com/twq/prepaser/WebLogPreParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/script/etl/web_etl_daily.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/script/etl/web_etl_daily.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/script/init/etl_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/script/init/etl_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/script/init/etl_temp.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/script/init/etl_temp.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/script/init/hbase_init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/script/init/hbase_init.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +288,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spark-Streaming" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17266187" />
@@ -541,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573733195958</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="WEB_ETL完成,后端功能全实现,待测试">
+      <created>1640870786906</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640870786906</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -645,7 +567,8 @@
     <MESSAGE value="TargetPage功能实现" />
     <MESSAGE value="backend功能接近全部实现" />
     <MESSAGE value="spark会话切割及ETL实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="spark会话切割及ETL实现" />
+    <MESSAGE value="WEB_ETL完成,后端功能全实现,待测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="WEB_ETL完成,后端功能全实现,待测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
